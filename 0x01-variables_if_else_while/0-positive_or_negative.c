@@ -19,7 +19,7 @@ int main(void)
 	}
 	if(n<0)
 	{
-		printf("%i is negative/n",n);
+		printf("%iis negative/n",n);
 	}
 	if(n==0)
 	{
