@@ -23,7 +23,7 @@ int main(void)
 	}
 	if(n==0)
 	{
-		printf("%i is zero/n");
+		printf("%i is zero/n",n);
 	}
 
 	return (0);
