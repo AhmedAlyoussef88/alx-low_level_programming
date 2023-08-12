@@ -13,15 +13,18 @@ int main(void)
 	{
 		for (num2 = num1; num2 < 100; num2++)
 		{
-			putchar('0' + (num1 / 10));
-			putchar('0' + (num1 % 10));
-			putchar(' ');
-			putchar('0' + (num2 / 10));
-			putchar('0' + (num2 % 10));
-			if (num1 != 99 || num2 != 99)
+			if (number1 != number2)
 			{
-				putchar(',');
+				putchar('0' + (num1 / 10));
+				putchar('0' + (num1 % 10));
 				putchar(' ');
+				putchar('0' + (num2 / 10));
+				putchar('0' + (num2 % 10));
+				if (num1 != 99 || num2 != 99)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	}
