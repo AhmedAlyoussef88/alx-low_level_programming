@@ -8,14 +8,14 @@ int main(void)
 {
 	int x, y;
 
-	x = 0;
-	while (x < 1024)
+	y = 0;
+	while (y < 1024)
 	{
-		if ((x % 3 == 0) || (x % 5 == 0))
+		if ((y % 3 == 0) || (y % 5 == 0))
 		{
 			x += y;
 		}
-		x++;
+		y++;
 	}
 	printf("%d\n", x);
 	return (0);
