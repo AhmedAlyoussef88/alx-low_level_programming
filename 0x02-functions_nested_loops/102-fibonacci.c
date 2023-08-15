@@ -4,7 +4,7 @@
  * Description: prints the first 50 Fibonacci numbers
  * Return: Always 0 (Success)
  */
-void main(void)
+int main(void)
 {
 	int count = 0;
 	unsigned long x = 0, y = 1, z;
