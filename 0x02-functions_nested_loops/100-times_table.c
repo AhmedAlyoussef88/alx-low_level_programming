@@ -2,7 +2,6 @@
 /**
  * print_times_table - prints the n times table, starting with 0.
  * @n : Input parameters
- * Return: Always 0 (Success)
  */
 void print_times_table(int n)
 {
@@ -44,5 +43,4 @@ void print_times_table(int n)
 			i++;
 		}
 	}
-	return (0);
 }
