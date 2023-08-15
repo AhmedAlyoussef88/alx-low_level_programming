@@ -4,7 +4,7 @@
  * Description: list all the natural numbers below 10
  * Return: Always 0 (Success)
  */
-void main(void)
+int main(void)
 {
 	int x, y;
 
@@ -17,6 +17,6 @@ void main(void)
 		}
 		x++;
 	}
-	printf("d\n", x);
+	printf("%d\n", x);
 	return (0);
 }
