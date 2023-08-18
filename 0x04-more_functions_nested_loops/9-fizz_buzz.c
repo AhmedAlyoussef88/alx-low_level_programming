@@ -2,8 +2,8 @@ i#include "main.h"
 #include <stdio.h>
 
 /**
- * main - prints the numbers from 1 to 100,
- * followed by a new line
+ * main - Entry point
+ * Description: prints the numbers 1 - 100
  * Return: Always 0 (Success)
  */
 
