@@ -6,6 +6,7 @@ i#include "main.h"
  * followed by a new line
  * Return: Always 0 (Success)
  */
+
 int main(void)
 {
 	int i;
@@ -25,9 +26,7 @@ int main(void)
 			printf(" Buzz");
 		}
 		else
-		{
 			printf("%d", i);
-		}
 		if (i != 100)
 			printf(" ");
 	}
