@@ -5,23 +5,19 @@
  */
 void most_numbers(void)
 {
-	int i = 0, j, x;
+	int x, y;
 
-	while (i <= 10)
+	for (x = 0; x < 10; x++)
 	{
-		j = 0;
-		while (j <= 14)
+		for (y = 0; y < 15 ; y++)
 		{
-			x = j;
-			if (j > 9)
+			if (y >= 10)
 			{
-				_putchar('1');
-				x = j % 10;
+				_putchar(y / 10 + '0');
 			}
-			_putchar(x + '0');
-			j++;
+
+			_putchar(y % 10 + '0');
 		}
-		i++;
 		_putchar('\n');
 	}
 }
