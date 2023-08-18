@@ -5,19 +5,20 @@
  */
 void print_most_numbers(void)
 {
-	int i = 0, j;
+	int i = 0, j, x;
 
-	while (i < 10)
+	while (i <= 10)
 	{
 		j = 0;
 		while (j <= 14)
 		{
-			if (j >= 10)
+			x = j;
+			if (j > 9)
 			{
 				_putchar('1');
+				x = j % 10;
 			}
-			_putchar(j % 10 + '0');
-			_putchar(j + '0');
+			_putchar(x + '0');
 			j++;
 		}
 		i++;
