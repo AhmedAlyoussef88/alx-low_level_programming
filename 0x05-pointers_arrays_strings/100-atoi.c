@@ -21,7 +21,8 @@ int _atoi(char *s)
 		else if (found)
 			break;
 
-	} while (*s++)
+	} while (*s++);
+
 	retResult = number * sign;
 	return (retResult);
 }
