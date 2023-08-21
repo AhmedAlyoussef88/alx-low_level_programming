@@ -10,8 +10,7 @@ int _atoi(char *s)
 
 	unsigned int number = 0;
 
-	while (*s)
-	{
+	do {
 		if (*s == '-')
 			sign *= -1;
 		else if (*s >= '0' && *s <= '9')
@@ -22,8 +21,7 @@ int _atoi(char *s)
 		else if (found)
 			break;
 
-		s++;
-	}
+	} while (*s++)
 	retResult = number * sign;
 	return (retResult);
 }
