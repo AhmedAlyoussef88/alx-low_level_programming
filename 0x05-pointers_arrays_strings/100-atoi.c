@@ -12,7 +12,7 @@ int _atoi(char *s)
 
 	int retResult = 0;
 
-	while (1)
+	while (*s++)
 	{
 		if (*s == '-')
 			sign *= -1;
@@ -20,7 +20,6 @@ int _atoi(char *s)
 			number = (number * 10) + (*s - '0');
 		else if (number > 0)
 			break;
-		*s++;
 	}
 	retResult = number * sign;
 	return (retResult);
