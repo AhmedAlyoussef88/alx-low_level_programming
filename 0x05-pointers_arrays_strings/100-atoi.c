@@ -6,11 +6,12 @@
  */
 int _atoi(char *s)
 {
-	int sign = 0, retResult = 0;
+	int sign = 1, retResult = 0;
 
 	unsigned int number = 0;
 
-	do {
+	while (*s)
+	{
 		if (*s == '-')
 		{
 			sign *= -1;
@@ -23,8 +24,8 @@ int _atoi(char *s)
 		{
 			break;
 		}
-
-	} while (*s++);
+		s++;
+	}
 
 	retResult = number * sign;
 	return (retResult);
