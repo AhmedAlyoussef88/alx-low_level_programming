@@ -12,14 +12,17 @@ int _atoi(char *s)
 
 	do {
 		if (*s == '-')
+		{
 			sign *= -1;
+		}
 		else if (*s >= '0' && *s <= '9')
 		{
 			number = (number * 10) + (*s - '0');
-			found = 1;
 		}
-		else if (found)
+		else if (number > 0)
+		{
 			break;
+		}
 
 	} while (*s++);
 
