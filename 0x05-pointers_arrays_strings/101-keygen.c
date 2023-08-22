@@ -17,7 +17,7 @@ int main(void)
 		password[i] = rand() % CharSetSize;
 		putchar(password[i] + '0');
 		x += (password[i] + '0');
-		if ((TargetSum - x) - '0' < CharSetSize)
+		if ((Target - x) - '0' < CharSetSize)
 		{
 			y = Target - x - '0';
 			x += y;
