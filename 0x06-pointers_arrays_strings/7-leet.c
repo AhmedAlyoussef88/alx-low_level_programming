@@ -15,7 +15,7 @@ char *leet(char *str)
 	{
 		while (j < 10)
 		{
-			if (key[i] == value[j])
+			if (str[i] == key[j])
 			{
 				srt[i] = value[j];
 			}
