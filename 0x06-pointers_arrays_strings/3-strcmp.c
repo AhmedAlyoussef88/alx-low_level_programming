@@ -9,7 +9,7 @@
 int _strcmp(char *s1, char *s2)
 {
 	int count1 = 0, count2 = 0;
-	
+
 	while (s1[count1] != '\0')
 		count1++;
 
@@ -17,7 +17,7 @@ int _strcmp(char *s1, char *s2)
 		count2++;
 
 	if (count1 == count2)
-		return 0;
+		return (0);
 
 	if (count1 < count2)
 		return (count2 - count1);
