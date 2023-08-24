@@ -1,9 +1,8 @@
 #include "main.h"
 /**
  * _strcmp - function should work exactly like strncpy
- * @dest: destination string
- * @src: source string
- * @n: bytes number
+ * @s1: destination string
+ * @s2: source string
  * Return: less than Zero if s1 <  s2
  * 0 if s1 = s2, more than 0 if s1 > s2
  */
