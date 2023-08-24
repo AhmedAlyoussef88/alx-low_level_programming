@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strncpy - function should work exactly like strncpy
+ * _strcmp - function should work exactly like strncpy
  * @dest: destination string
  * @src: source string
  * @n: bytes number
@@ -19,8 +19,10 @@ int _strcmp(char *s1, char *s2)
 
 	if (count1 == count2)
 		return 0;
+
 	if (count1 < count2)
 		return (count2 - count1);
+
 	if (count1 > count2)
 		return (count1 - count2);
 }
