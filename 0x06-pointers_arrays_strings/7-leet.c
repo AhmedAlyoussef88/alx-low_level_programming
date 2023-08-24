@@ -6,13 +6,14 @@
  */
 char *leet(char *str)
 {
-	int i = 0, j = 0;
+	int i = 0, j;
 
 	char *key = "aAeEoOtTlL";
 	char *value = "4433007711";
 
 	while (str[i] != '\0')
 	{
+		j = 0;
 		while (j < 10)
 		{
 			if (str[i] == key[j])
