@@ -12,7 +12,7 @@ void printing(char *a, int size, int i)
 
 	while (x <= 9)
 	{
-		if (x <= s)
+		if (x <= size)
 			printf("%02x", a[i * 10 + x]);
 		else
 			printf("  ");
@@ -21,7 +21,7 @@ void printing(char *a, int size, int i)
 		x++;
 	}
 	y = 0;
-	while (y <= s)
+	while (y <= size)
 	{
 		if (a[i * 10 + y] > 31 && a[i * 10 + y] < 127)
 			putchar(a[i * 10 + y]);
