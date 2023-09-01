@@ -5,7 +5,7 @@
  * @argv: input parameter array
  * Return: Always 0 (Success)
  */
-int main(int argc, char *argv[])
+int main(int argc, char const *argv[])
 {
 	if(argc > 0)
 		printf("%s\n", argv[0]);
