@@ -22,6 +22,7 @@ int main(int argc, char *argv[])
 				puts("Error");
 				return (1);
 			}
+			j++;
 		}
 		i++;
 	}
