@@ -10,7 +10,7 @@ char *_strdup(char *str)
 {
 	unsigned int i = 0, x = 0;
 
-	char *duplicate = malloc(sizeof(char) * (x + 1));
+	char *duplicate;
 
 	if (str == NULL || duplicate == NULL)
 	{
@@ -20,6 +20,9 @@ char *_strdup(char *str)
 	{
 		x++;
 	}
+	duplicate = malloc(sizeof(char) * (x + 1));
+	if (duplicate == NULL)
+		return (duplicate);
 	while ((duplicate[i] = str[i]) != '\0')
 	{
 		i++;
