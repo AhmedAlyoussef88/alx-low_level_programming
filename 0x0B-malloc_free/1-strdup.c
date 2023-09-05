@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 /**
  * *_strdup - pointer to a new string which is a duplicate of the string str
  * Memory for the new string is obtained with malloc,and can be freed with free
