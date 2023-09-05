@@ -12,9 +12,9 @@ char *_strdup(char *str)
 
 	char *duplicate;
 
-	if (str == NULL || duplicate == NULL)
+	if (str == NULL)
 	{
-		return (NULL);
+		return (str);
 	}
 	while (str[x])
 	{
