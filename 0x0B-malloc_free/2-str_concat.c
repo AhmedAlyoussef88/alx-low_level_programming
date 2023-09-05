@@ -12,9 +12,9 @@ char *str_concat(char *s1, char *s2)
 	char *s3;
 	unsigned int x = 0, y = 0, s1Len = 0, s2Len = 0;
 
-	while (s1 != NULL && s1[s1Len])
+	while (s1 && s1[s1Len])
 		s1Len++;
-	while (s2 != NULL && s2[s2Len])
+	while (s2 && s2[s2Len])
 		s2Len++;
 	s3 = malloc(sizeof(char) * (s1Len + s2Len + 1));
 	if (s3 == NULL)
