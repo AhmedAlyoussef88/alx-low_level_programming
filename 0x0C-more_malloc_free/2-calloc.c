@@ -3,8 +3,8 @@
 /**
  * *fillmemory - fill memory
  * @str: input parameter string
- * @b: input parameter string
- * @n: num of copy
+ * @x: input parameter string
+ * @y: num of copy
  * Return: pointer to memory
  */
 char *fillmemory(char *str, char x, unsigned int y)
