@@ -16,9 +16,9 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(98);
 	}
-	ar1 = atstri(argv[1]);
-	f = get_strp_f(argv[2]);
-	ar2 = atstri(argv[3]);
+	ar1 = atoi(argv[1]);
+	f = get_op_func(argv[2]);
+	ar2 = atoi(argv[3]);
 	if (!f)
 	{
 		printf("Error\n");
