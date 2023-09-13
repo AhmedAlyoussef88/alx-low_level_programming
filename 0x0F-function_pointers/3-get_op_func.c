@@ -4,7 +4,7 @@
  * asked by the user. You’re not allowed to declare any other function.
  * @s: input parameter
  * Return: returns a pointer to the function that corresponds to the
- * operator given as a parameter. Example: get_op_func("+") 
+ * operator given as a parameter. Example: get_op_func("+")
  * should return a pointer to the function op_add
  */
 int (*get_op_func(char *s))(int, int)
