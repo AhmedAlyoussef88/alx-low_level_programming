@@ -7,7 +7,7 @@
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i = 0;
-	va_l l;
+	va_list l;
 
 	va_start(l, n);
 	while (i < n)
