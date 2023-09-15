@@ -27,8 +27,10 @@ void print_all(const char * const format, ...)
 					s = "(nil)";
 				printf("%s%s", x, s);
 			}
-		x = ", ";
-		i++;
+			x = ", ";
+			i++;
 		}
 	}
+	printf("\n");
+	va_end(list);
 }
