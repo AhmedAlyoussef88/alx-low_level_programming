@@ -27,6 +27,11 @@ void print_all(const char * const format, ...)
 					s = "(nil)";
 				printf("%s%s", x, s);
 			}
+			else
+			{
+				i++;
+				continue;
+			}
 			x = ", ";
 			i++;
 		}
