@@ -8,12 +8,12 @@
  */
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
-	if (*head == NULL)
-		return (-1);
 	listint_t *tmpNode = *head;
 	listint_t *c = NULL;
 	unsigned int x = 0;
 
+	if (*head == NULL)
+                return (-1);
 	if (index == 0)
 	{
 		*head = (*head)->next;
