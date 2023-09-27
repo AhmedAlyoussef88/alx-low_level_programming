@@ -2,16 +2,18 @@
 /**
  * free_listint_safe - frees a listint_t list.
  * @h: input parameter list pointer
- * Return: the size of the list that was free’d
+ * Return: the size of the list that was freed
  */
 size_t free_listint_safe(listint_t **h)
 {
 	size_t size = 0;
-	int x;
+	int x = 0;
 	listint_t *tmpList;
 
 	if (!h || !*h)
+	{
 		return (0);
+	}
 	while (*h)
 	{
 		x = *h - (*h)->next;
