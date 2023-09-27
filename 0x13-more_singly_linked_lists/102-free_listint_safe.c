@@ -1,7 +1,7 @@
-#include "lists.h"
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
+#include "lists.h"
 /**
  * free_listint_safe - frees a listint_t list.
  * @h: input parameter list pointer
