@@ -9,7 +9,7 @@
  */
 size_t free_listint_safe(listint_t **h)
 {
-	size_t size = 0;
+	size_t s = 0;
 	int x = 0;
 	listint_t *tmpList;
 
@@ -25,16 +25,16 @@ size_t free_listint_safe(listint_t **h)
 			tmpList = (*h)->next;
 			free(*h);
 			*h = tmpList;
-			size++;
+			s++;
 		}
 		else
 		{
 			free(*h);
 			*h = NULL;
-			size++;
+			s++;
 			break;
 		}
 	}
 	*h = NULL;
-	return (size);
+	return (s);
 }
