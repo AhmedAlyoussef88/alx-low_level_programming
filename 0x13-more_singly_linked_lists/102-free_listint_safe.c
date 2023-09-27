@@ -7,7 +7,7 @@
 size_t free_listint_safe(listint_t **h)
 {
 	size_t size = 0;
-	int x = 0;
+	int x;
 	listint_t *tmpList;
 
 	if (!h || !*h)
