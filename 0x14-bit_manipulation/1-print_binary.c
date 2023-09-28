@@ -13,16 +13,16 @@ void print_binary(unsigned long int n)
 	{
 		if (n & 1L << --bits)
 		{
-			printf("1");
+			_putchar('1');
 			x++;
 		}
 		else if (x)
 		{
-			printf("0");
+			_putchar('0');
 		}
 	}
 	if (!x)
 	{
-		printf("0");
+		_putchar('0');
 	}
 }
