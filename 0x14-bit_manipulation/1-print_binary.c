@@ -14,7 +14,7 @@ void print_binary(unsigned long int n)
 		printf("0\n");
 		return;
 	}
-	
+
 	while (bits > 0)
 	{
 		if (n & 1L << --bits)
