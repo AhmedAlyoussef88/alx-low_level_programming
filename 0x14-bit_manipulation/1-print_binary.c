@@ -6,7 +6,7 @@
  */
 void print_binary(unsigned long int n)
 {
-	int bits = sizeof(n) * 8;
+	int bits = sizeof(n) * 8, x = 0;
 	unsigned long int x;
 
 	if (n == 0)
@@ -14,22 +14,21 @@ void print_binary(unsigned long int n)
 		printf("0\n");
 		return;
 	}
-	int i = bits - 1;
-	int p = 0;
-
-	while (i >= 0)
+	
+	while (bits > 0)
 	{
-		x = 1UL << i;
-		if ((n & x) != 0)
+		if (n & 1L << --bits)
 		{
-			_putchar('1');
-			p = 1;
+			printf("1");
+			x++;
 		}
-		else if (p || i == 0)
+		else if (x)
 		{
-			_putchar('0');
+			printf("0");
 		}
-		i--;
 	}
-	_putchar('\n');
+	if (!x)
+	{
+		printf("0");
+	}
 }
