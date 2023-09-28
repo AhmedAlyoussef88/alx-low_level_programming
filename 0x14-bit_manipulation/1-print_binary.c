@@ -9,12 +9,6 @@ void print_binary(unsigned long int n)
 	int bits = sizeof(n) * 8, x = 0;
 	unsigned long int x;
 
-	if (n == 0)
-	{
-		printf("0");
-		return;
-	}
-
 	while (bits)
 	{
 		if (n & 1L << --bits)
