@@ -10,9 +10,8 @@ void File_Close(int fd);
  */
 char *bufferCreate(char *file)
 {
-	char *b;
+	char *b = malloc(sizeof(char) * 1024);
 
-	b = malloc(sizeof(char) * 1024);
 	if (b == NULL)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file);
@@ -22,15 +21,15 @@ char *bufferCreate(char *file)
 }
 /**
  * File_Close - close the file.
- * @fd: input parameter.
+ * @i: input parameter.
  */
-void File_Close(int fd)
+void File_Close(int i)
 {
-	int x = close(fd);
+	int x = close(i);
 
-	if (x < 0)
+	if (x == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", i);
 		exit(100);
 	}
 }
@@ -55,14 +54,14 @@ int main(int argc, char *argv[])
 	_read = read(f, b, 1024);
 	t = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	do {
-		if (f < 0 || _read < 0)
+		if (f == -1 || _read == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't read f file %s\n", argv[1]);
 			free(b);
 			exit(98);
 		}
 		_write = write(t, b, _read);
-		if (t < 0 || _write < 0)
+		if (t == -1 || _write == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write t %s\n", argv[2]);
 			free(b);
