@@ -46,7 +46,7 @@ int main(int argc, char *argv[])
 
 	if (argc != 3)
 	{
-		dprintf(STDERR_FILENO, "Usage: cp file_f file_t\n");
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_t\n");
 		exit(97);
 	}
 	b = bufferCreate(argv[2]);
@@ -56,14 +56,14 @@ int main(int argc, char *argv[])
 	do {
 		if (f == -1 || _read == -1)
 		{
-			dprintf(STDERR_FILENO, "Error: Can't read f file %s\n", argv[1]);
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 			free(b);
 			exit(98);
 		}
 		_write = write(t, b, _read);
 		if (t == -1 || _write == -1)
 		{
-			dprintf(STDERR_FILENO, "Error: Can't write t %s\n", argv[2]);
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 			free(b);
 			exit(99);
 		}
